@@ -4,13 +4,13 @@ _G.Settings = {
         Debug = true,
 
         ["Main"] = {
-            Range = 12,
-            Delay = 0, -- anything < than 0.6 could break it
+            Range = 15,
+            Delay = 0, 
             Chance = 100,
             RandomChance = false,
-            Method = "Sound", -- Sound // Animation, sound will be always more accurate, use animation for legit porpuses
+            Method = "Sound", -- Sound // Animation
             CheckIfLooking = false,
-            Threshold = 0.35,
+            Threshold = 0.4,
         },
 
         ["Aimbot"] = {
@@ -39,14 +39,14 @@ _G.Settings = {
         },
 
         ["Anti"] = {
-            Enabled = false, --- pending fixes DO NOT use
+            Enabled = false, 
             Delay = 0.35,
             Range = 50,
         },
 
         ["Big"] = {
             Settings = {
-                Head = true,
+                Head = false,
                 Torso = false,
                 HSize = 10,
                 TSize = 10,
@@ -66,7 +66,7 @@ _G.Settings = {
 
         ["Custom"] = {
             Sounds = {
-                Enabled = true,
+                Enabled = false,
                 Hit = "CSGO", -- TF2 // Damn // ClashR // Rust // HAHA // Bozo // CSGO // Boink // Fart // Rage
                 Parry = "CSGO", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
                 Kill = "CSGO", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
