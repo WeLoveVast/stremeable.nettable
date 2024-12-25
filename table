@@ -4,13 +4,14 @@ _G.Settings = {
         Debug = true,
 
         ["Main"] = {
-            Range = 15,
+            Range = 12,
             Delay = 0, 
             Chance = 100,
             RandomChance = false,
-            Method = "Sound", -- Sound // Animation
+            DebugRC = false,
+            Method = "Sound", -- Sound // Animation, sound will be always more accurate, use animation for legit porpuses
             CheckIfLooking = false,
-            Threshold = 0.4,
+            Threshold = 0.35,
         },
 
         ["Aimbot"] = {
@@ -39,8 +40,8 @@ _G.Settings = {
         },
 
         ["Anti"] = {
-            Enabled = false, 
-            Delay = 0.35,
+            Enabled = true, 
+            Delay = 0.4,
             Range = 50,
         },
 
@@ -66,14 +67,13 @@ _G.Settings = {
 
         ["Custom"] = {
             Sounds = {
-                Enabled = false,
-                Hit = "CSGO", -- TF2 // Damn // ClashR // Rust // HAHA // Bozo // CSGO // Boink // Fart // Rage
+                Enabled = false, -- All have Normal option
+                Hit = "Rust", -- TF2 // Damn // ClashR // Rust // HAHA // Bozo // CSGO // Boink // Fart // Rage
                 Parry = "CSGO", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
-                Kill = "CSGO", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
-                Explosive = "Normal", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+                Kill = "TF2", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+                Explosive = "BOINK", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
                 Nuke = "TF2", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
-                Heal = "Normal", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
-                Dash = "TF2", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+                Dash = "CSGO", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
             },
         },
 
