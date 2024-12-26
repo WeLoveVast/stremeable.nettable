@@ -1,17 +1,17 @@
-_G.Settings = {
+getgenv().Settings = {
     ["AutoParry"] = {
         Enabled = true,
         Debug = true,
 
         ["Main"] = {
-            Range = 12,
+            Range = 15,
             Delay = 0, 
             Chance = 100,
             RandomChance = false,
             DebugRC = false,
-            Method = "Sound", -- Sound // Animation, sound will be always more accurate, use animation for legit porpuses
+            Method = "Animation", -- Sound // Animation, sound will be always more accurate, use animation for legit porpuses
             CheckIfLooking = false,
-            Threshold = 0.35,
+            Threshold = 0.02,
         },
 
         ["Aimbot"] = {
@@ -27,6 +27,7 @@ _G.Settings = {
             HitboxExpander = true,
             ShowHBE = false,
             ShowRange = false,
+            ModKick = true,
 
             AntiAim = {
                 Enabled = false,
@@ -41,16 +42,16 @@ _G.Settings = {
 
         ["Anti"] = {
             Enabled = true, 
-            Delay = 0.4,
+            Delay = 0.42,
             Range = 50,
         },
 
         ["Big"] = {
             Settings = {
                 Head = false,
-                Torso = false,
+                Torso = true,
                 HSize = 10,
-                TSize = 10,
+                TSize = 5.7,
             }
         },
 
@@ -81,11 +82,10 @@ _G.Settings = {
             Enabled = true,
             Keybind = "L",
             HoldMode = {
-                Enabled = false,
+                Enabled = false, -- no Sound method support because i forgor..
                 Keybind = "C",
             },
         },
     }
 }
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/WeLoveVast/stremeable.nettable/refs/heads/main/update1.04"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/WeLoveVast/stremeable.nettable/refs/heads/main/update1.05"))()
