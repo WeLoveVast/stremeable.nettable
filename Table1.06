@@ -1,17 +1,17 @@
-getgenv().Settings = {
+_G.Settings = {
     ["AutoParry"] = {
         Enabled = true,
         Debug = true,
 
         ["Main"] = {
-            Range = 15,
+            Range = 10.5,
             Delay = 0, 
             Chance = 100,
             RandomChance = false,
             DebugRC = false,
-            Method = "Animation", -- Sound // Animation, sound will be always more accurate, use animation for legit porpuses
+            Method = "Sound", -- Sound // Animation, sound will be always more accurate, use animation for legit porpuses
             CheckIfLooking = false,
-            Threshold = 0.02,
+            Threshold = 0.15,
         },
 
         ["Aimbot"] = {
@@ -49,8 +49,8 @@ getgenv().Settings = {
         ["Big"] = {
             Settings = {
                 Head = false,
-                Torso = true,
-                HSize = 10,
+                Torso = false,
+                HSize = 5.7, -- anything bigger than 10 could ban you
                 TSize = 5.7,
             }
         },
@@ -79,7 +79,7 @@ getgenv().Settings = {
         },
 
         ["Panic"] = {
-            Enabled = true,
+            Enabled = false,
             Keybind = "L",
             HoldMode = {
                 Enabled = false, -- no Sound method support because i forgor..
@@ -88,4 +88,4 @@ getgenv().Settings = {
         },
     }
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/WeLoveVast/stremeable.nettable/refs/heads/main/update1.05"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/WeLoveVast/stremeable.nettable/refs/heads/main/update1.06"))()
