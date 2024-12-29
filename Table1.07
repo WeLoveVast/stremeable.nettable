@@ -4,11 +4,10 @@ _G.Settings = {
         Debug = true,
 
         ["Main"] = {
-            Range = 10.5,
+            Range = 12.5,
             Delay = 0, 
             Chance = 100,
             RandomChance = false,
-            DebugRC = false,
             Method = "Sound", -- Sound // Animation, sound will be always more accurate, use animation for legit porpuses
             CheckIfLooking = false,
             Threshold = 0.15,
@@ -27,7 +26,6 @@ _G.Settings = {
             HitboxExpander = true,
             ShowHBE = false,
             ShowRange = false,
-            ModKick = true,
 
             AntiAim = {
                 Enabled = false,
@@ -88,4 +86,4 @@ _G.Settings = {
         },
     }
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/WeLoveVast/stremeable.nettable/refs/heads/main/update1.06"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/WeLoveVast/stremeable.nettable/refs/heads/main/update1.07"))()
